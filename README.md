@@ -51,7 +51,7 @@ entry:
 curl --location --request GET '{{konpig_host}}/shitty-banner/apid'
 ```
 4. Response
-```JSON
+```
 {
     isShowBanner: false,
     banners: [
