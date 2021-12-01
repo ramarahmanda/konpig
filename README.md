@@ -21,7 +21,7 @@ This project architecture contains of
 
 ## How to use
 1. Create a yaml config file with unique name, this will be used as entry point to your config
-2. example: `shitty-banner.yaml`
+ - example: `shitty-banner.yaml`
 ```yaml
 sources:
     - type: gsheet
@@ -46,11 +46,11 @@ entry:
                 - bannerName: {{sources[1].name}}
                   bannerId: {{sources[1].id}}
 ```
-3. Your config will be accessible using REST API
+2. Your config will be accessible using REST API
 ```bash
-curl --location --request GET '{{konpig_host}}/shitty-banner/apid'
+curl --location --request GET '{{konpig_host}}/shitty-banner'
 ```
-4. Response
+3. Response
 ```
 {
     isShowBanner: false,
